@@ -1,7 +1,9 @@
-Scripts de Automação e Integração
+Scripts de Automação e Integração (Bling ERP ↔ Agendor CRM)
+
 Este projeto nasceu da necessidade de centralizar e automatizar o fluxo comercial entre o back-office (Bling) e a gestão de vendas (Agendor). O ecossistema consiste em scripts de sincronização de dados e um motor de extração para Business Intelligence.
 
 O objetivo principal é garantir que a equipe de vendas trabalhe com dados atualizados em tempo real, eliminando erros manuais de entrada e fornecendo métricas precisas através de um Dashboard automatizado.
+
 Tecnologias Utilizadas
 
     Python 3: Motor de sincronização e integração entre as APIs.
@@ -13,10 +15,11 @@ Tecnologias Utilizadas
     Google Sheets: Utilizado como Data Warehouse, após o script JS fazer o processo de ETL.
 
     Google Data Studio: Construção de dashboards completos para inteligência de negócios, com base nos dados extraídos do Google Sheets.
-    
+
     Postman: Prototipagem e mapeamento de endpoints.
 
- Componentes do Projeto
+Componentes do Projeto
+
 1. Sincronizador de Produtos (Python)
 
 Script focado na consistência de dados entre o ERP e o CRM.
@@ -37,7 +40,7 @@ Automação de alto nível para geração de relatórios gerenciais.
 
     Tracking de Vendas e Tarefas: Monitoramento de performance por vendedor e motivos de perda de negócios (Loss Reasons), facilitando a análise de gargalos no funil.
 
- Diferenciais Técnicos Aplicados
+Diferenciais Técnicos Aplicados
 
     Eficiência de Requisições: Implementação de time.sleep e paginação para respeitar os Rate Limits das APIs.
 
@@ -45,10 +48,15 @@ Automação de alto nível para geração de relatórios gerenciais.
 
     Escalabilidade: Estrutura preparada para lidar com múltiplos anos de dados e grandes volumes de pedidos/notas fiscais.
 
- Como rodar este projeto?
+Como rodar este projeto?
+ 
+Python
 
-    Python: Configure as variáveis BLING_API_KEY e AGENDOR_API_KEY no seu ambiente.
+Configure as variáveis BLING_API_KEY e AGENDOR_API_KEY no seu ambiente local ou servidor.
+Apps Script
 
-    Apps Script: Insira o Script ID da sua planilha e os tokens necessários no PropertiesService do Google.
+    Abra o editor de script da sua planilha Google.
 
-    Execução: O script Python pode ser agendado via CronJob ou rodado localmente para sincronizações pontuais.
+    Insira o código JavaScript disponível neste repositório.
+
+    Configure o Script ID da sua planilha e os tokens necessários no PropertiesService do Google.
