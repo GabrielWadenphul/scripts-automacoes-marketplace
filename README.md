@@ -1,4 +1,4 @@
-#Scripts de Automação e Integração
+Scripts de Automação e Integração
 Este projeto nasceu da necessidade de centralizar e automatizar o fluxo comercial entre o back-office (Bling) e a gestão de vendas (Agendor). O ecossistema consiste em scripts de sincronização de dados e um motor de extração para Business Intelligence.
 
 O objetivo principal é garantir que a equipe de vendas trabalhe com dados atualizados em tempo real, eliminando erros manuais de entrada e fornecendo métricas precisas através de um Dashboard automatizado.
